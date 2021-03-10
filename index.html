@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SpaceX Launch Programs</title>
+    <meta name="description" content="">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <h1>SpaceX Launch Programs</h1>
+        <div class="left-block">
+          <h2>Filters</h2>
+          <h3>Launch Year</h3>
+          <ul>
+            <li>
+              <input type="checkbox" id="2006" name="2006" checked>
+              <label for="2006">2006</label>
+            </li>
+            <li>
+              <input type="checkbox" id="2007" name="2007">
+              <label for="2007">2007</label>
+            </li>
+            <li>
+              <input type="checkbox" id="2008" name="2008">
+              <label for="2008">2008</label>
+            </li>
+            <li>
+              <input type="checkbox" id="2009" name="2009">
+              <label for="2009">2009</label>
+            </li>
+            <li>
+              <input type="checkbox" id="2010" name="2010">
+              <label for="2010">2010</label>
+            </li>
+            <li>
+              <input type="checkbox" id="2011" name="2011">
+              <label for="2011">2011</label>
+            </li>
+            <li>
+              <input type="checkbox" id="2012" name="2012">
+              <label for="2012">2012</label>
+            </li>
+            <li>
+              <input type="checkbox" id="2013" name="2013">
+              <label for="2013">2013</label>
+            </li>
+            <li>
+              <input type="checkbox" id="2014" name="2014">
+              <label for="2014">2014</label>
+            </li>
+            <li>
+              <input type="checkbox" id="2015" name="2015">
+              <label for="2015">2015</label>
+            </li>
+            <li>
+              <input type="checkbox" id="2016" name="2016">
+              <label for="2016">2016</label>
+            </li>
+            <li>
+              <input type="checkbox" id="2017" name="2017">
+              <label for="2017">2017</label>
+            </li>
+            <li>
+              <input type="checkbox" id="2018" name="2018">
+              <label for="2018">2018</label>
+            </li>
+            <li>
+              <input type="checkbox" id="2019" name="2019">
+              <label for="2019">2019</label>
+            </li>
+            <li>
+              <input type="checkbox" id="2020" name="2020">
+              <label for="2020">2020</label>
+            </li>
+          </ul>
+          <div class="clearfix"></div>
+          <h3>Successful Launch</h3>
+          <ul>
+            <li>
+              <input type="radio" id="launchtrue" value="launchtrue" name="launch">
+              <label for="launchtrue">True</label>
+            </li>
+            <li>
+              <input type="radio" id="launchfalse" value="launchfalse" name="launch">
+              <label for="launchfalse">False</label>
+            </li>
+          </ul>
+          <div class="clearfix"></div>
+          <h3>Successful Landing</h3>
+          <ul>
+            <li>
+              <input type="radio" id="landingtrue" value="landingtrue" name="landing">
+              <label for="landingtrue">True</label>
+            </li>
+            <li>
+              <input type="radio" id="landingfalse" value="landingfalse" name="landing">
+              <label for="landingfalse">False</label>
+            </li>
+          </ul>
+          <div class="clearfix"></div>
+        </div>
+        <div class="right-block">
+          <div class="mission-list">
+            <div class="block">
+              <div class="pic"><img src="images/mission01.png" alt=""></div>
+              <h2>FalconSat #1</h2>
+              <p>Mission Ids:</p>
+              <ul>
+                <li>{list Mission Ids}</li>
+              </ul>
+              <p>Launch Year: <em>2006</em></p>
+              <p>Successful Launch: <em>false</em></p>
+              <p>Successful Landing: <em>{launch_landing}</em></p>
+            </div>
+            <div class="block">
+              <div class="pic"><img src="images/mission02.png" alt=""></div>
+              <h2>DemoSat #2</h2>
+              <p>Mission Ids:</p>
+              <ul>
+                <li>{list Mission Ids}</li>
+              </ul>
+              <p>Launch Year: <em>{launch_year}</em></p>
+              <p>Successful Launch: <em>{launch_success}</em></p>
+              <p>Successful Landing: <em>{launch_landing}</em></p>
+            </div>
+            <div class="block">
+              <div class="pic"><img src="images/mission03.png" alt=""></div>
+              <h2>Trailblazer #3</h2>
+              <p>Mission Ids:</p>
+              <ul>
+                <li>{list Mission Ids}</li>
+              </ul>
+              <p>Launch Year: <em>{launch_year}</em></p>
+              <p>Successful Launch: <em>{launch_success}</em></p>
+              <p>Successful Landing: <em>{launch_landing}</em></p>
+            </div>
+            <div class="block">
+              <div class="pic"><img src="images/mission04.png" alt=""></div>
+              <h2>RatSat #4</h2>
+              <p>Mission Ids:</p>
+              <ul>
+                <li>{list Mission Ids}</li>
+              </ul>
+              <p>Launch Year: <em>{launch_year}</em></p>
+              <p>Successful Launch: <em>{launch_success}</em></p>
+              <p>Successful Landing: <em>{launch_landing}</em></p>
+            </div>
+            <div class="block">
+              <div class="pic"><img src="images/mission05.png" alt=""></div>
+              <h2>{mission_name} #{flight_number}</h2>
+              <p>Mission Ids:</p>
+              <ul>
+                <li>{list Mission Ids}</li>
+              </ul>
+              <p>Launch Year: <em>{launch_year}</em></p>
+              <p>Successful Launch: <em>{launch_success}</em></p>
+              <p>Successful Landing: <em>{launch_landing}</em></p>
+            </div>
+            <div class="block">
+              <div class="pic"><img src="images/mission06.png" alt=""></div>
+              <h2>{mission_name} #{flight_number}</h2>
+              <p>Mission Ids:</p>
+              <ul>
+                <li>{list Mission Ids}</li>
+              </ul>
+              <p>Launch Year: <em>{launch_year}</em></p>
+              <p>Successful Launch: <em>{launch_success}</em></p>
+              <p>Successful Landing: <em>{launch_landing}</em></p>
+            </div>
+            <div class="block">
+              <div class="pic"><img src="images/mission07.png" alt=""></div>
+              <h2>{mission_name} #{flight_number}</h2>
+              <p>Mission Ids:</p>
+              <ul>
+                <li>{list Mission Ids}</li>
+              </ul>
+              <p>Launch Year: <em>{launch_year}</em></p>
+              <p>Successful Launch: <em>{launch_success}</em></p>
+              <p>Successful Landing: <em>{launch_landing}</em></p>
+            </div>
+            <div class="block">
+              <div class="pic"><img src="images/mission08.png" alt=""></div>
+              <h2>{mission_name} #{flight_number}</h2>
+              <p>Mission Ids:</p>
+              <ul>
+                <li>{list Mission Ids}</li>
+              </ul>
+              <p>Launch Year: <em>{launch_year}</em></p>
+              <p>Successful Launch: <em>{launch_success}</em></p>
+              <p>Successful Landing: <em>{launch_landing}</em></p>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+        <h2 class="copy-rights">Developed by: <em>{developer name}</em></h2>
+      </div>
+    </div>
+  </body>
+</html>
